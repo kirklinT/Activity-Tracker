@@ -11,4 +11,4 @@ Nayandip - Initial GUI design for the application
 Roank - Implementation of use case 2 and one minro use case
 Sahil - Implementation of use case 1, setup git repository and think of other use cases
 
-
+General - Everyone discussed the use cases and requirements on 2018/09/22, and everyone will evaluate each other's work 
