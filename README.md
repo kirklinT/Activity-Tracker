@@ -6,9 +6,9 @@ The application is being developed by
 
 As of 9/22/2018 the tasks being worked on are as follows
 
-Kirklin - Implementation use case 3 and one minor use case
+Kirklin - Implementation use case 3 and use case 5
 Nayandip - Initial GUI design for the application
-Roank - Implementation of use case 2 and one minro use case
+Roank - Implementation of use case 2 and use case 5
 Sahil - Implementation of use case 1, setup git repository and think of other use cases
 
 General - Everyone discussed the use cases and requirements on 2018/09/22, and everyone will evaluate each other's work 
