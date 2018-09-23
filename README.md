@@ -1,5 +1,5 @@
 # Activity-Tracker
-The Activity Tracker app is a desktop application which will enable the user to see statistics related to his activities. User could connect his/her smart device to import the data. 
+The Activity Tracker app is a desktop application which will enable the user to see statistics related to their activities. Users can connect their smart device to import the data. 
 
 The application is being developed by 
 - Kirklin Taylor, Nayandip Banerjee, Roank Parmar, and Sahil Salma.
