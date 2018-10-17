@@ -25,6 +25,7 @@ import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EtchedBorder;
 import javax.swing.JProgressBar;
+import java.awt.Label;
 
 public class Home extends JFrame {
 
@@ -147,5 +148,11 @@ public class Home extends JFrame {
 		lblNewUser.setFont(new Font("Arial", Font.BOLD, 13));
 		lblNewUser.setBounds(722, 28, 70, 16);
 		contentPane.add(lblNewUser);
+		
+		Label label = new Label("Forgot Password ?");
+		
+		label.setFont(new Font("Dialog", Font.PLAIN, 11));
+		label.setBounds(498, 509, 123, 24);
+		contentPane.add(label);
 	}
 }
