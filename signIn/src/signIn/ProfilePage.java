@@ -25,6 +25,8 @@ import javax.swing.JComboBox;
 import javax.swing.ImageIcon;
 import javax.swing.JTextField;
 import javax.swing.JDesktopPane;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class ProfilePage extends JFrame {
 
@@ -69,13 +71,13 @@ public class ProfilePage extends JFrame {
 		JLabel lblNewLabel = new JLabel("Username");
 		lblNewLabel.setBackground(new Color(0, 0, 0));
 		lblNewLabel.setForeground(new Color(0, 0, 0));
-		lblNewLabel.setFont(new Font("Kristen ITC", Font.BOLD, 16));
+		lblNewLabel.setFont(new Font("Dialog", Font.BOLD, 16));
 		lblNewLabel.setBounds(22, 32, 131, 31);
 		panel.add(lblNewLabel);
 		
 		JLabel lblEmail = new JLabel("Email");
 		lblEmail.setForeground(new Color(0, 0, 0));
-		lblEmail.setFont(new Font("Kristen ITC", Font.BOLD, 16));
+		lblEmail.setFont(new Font("Dialog", Font.BOLD, 16));
 		lblEmail.setBounds(22, 76, 131, 31);
 		panel.add(lblEmail);
 		
@@ -95,7 +97,7 @@ public class ProfilePage extends JFrame {
 		
 		JLabel lblSearchFriends = new JLabel("Search Friends");
 		lblSearchFriends.setForeground(new Color(0, 0, 0));
-		lblSearchFriends.setFont(new Font("Arial", Font.BOLD, 15));
+		lblSearchFriends.setFont(new Font("Arial", Font.BOLD, 13));
 		lblSearchFriends.setBounds(0, 244, 131, 24);
 		panel.add(lblSearchFriends);
 		
@@ -124,18 +126,48 @@ public class ProfilePage extends JFrame {
 		panel_1.setLayout(null);
 		
 		Button Walking = new Button("Walking");
+		Walking.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				Walking.setBackground(new Color(255,88,79));
+			}
+			@Override
+			public void mouseExited(MouseEvent e) {
+				Walking.setBackground(new Color(255, 228, 181));
+			}
+		});
 		Walking.setBounds(32, 21, 102, 99);
 		panel_1.add(Walking);
 		Walking.setFont(new Font("Kristen ITC", Font.BOLD, 15));
 		Walking.setBackground(new Color(255, 228, 181));
 		
 		Button Biking = new Button("Biking");
+		Biking.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				Biking.setBackground(new Color(255,88,79));
+			}
+			@Override
+			public void mouseExited(MouseEvent e) {
+				Biking.setBackground(new Color(255, 228, 181));
+			}
+		});
 		Biking.setFont(new Font("Kristen ITC", Font.BOLD, 15));
 		Biking.setBackground(new Color(255, 228, 181));
 		Biking.setBounds(165, 21, 102, 99);
 		panel_1.add(Biking);
 		
 		Button AddActivity = new Button("+");
+		AddActivity.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				AddActivity.setBackground(new Color(255,88,79));
+			}
+			@Override
+			public void mouseExited(MouseEvent e) {
+				AddActivity.setBackground(new Color(255, 228, 181));
+			}
+		});
 		AddActivity.setFont(new Font("Kristen ITC", Font.BOLD, 23));
 		AddActivity.setBackground(new Color(255, 228, 181));
 		AddActivity.setBounds(300, 21, 102, 99);
@@ -144,6 +176,7 @@ public class ProfilePage extends JFrame {
 		Scrollbar scrollbar = new Scrollbar();
 		scrollbar.setOrientation(Scrollbar.HORIZONTAL);
 		scrollbar.setBounds(0, 135, 663, 21);
+		scrollbar.setVisible(false);
 		panel_1.add(scrollbar);
 		
 		JLabel lblNewLabel_2 = new JLabel("New label");
