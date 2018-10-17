@@ -107,21 +107,25 @@ public class Registration extends JFrame {
 		contentPane.add(lblNewLabel_4);
 		
 		FirstName_f = new JTextField();
+		FirstName_f.setFont(new Font("Arial", Font.PLAIN, 13));
 		FirstName_f.setBounds(367, 59, 160, 31);
 		contentPane.add(FirstName_f);
 		FirstName_f.setColumns(10);
 		
 		LastName_f = new JTextField();
+		LastName_f.setFont(new Font("Arial", Font.PLAIN, 13));
 		LastName_f.setColumns(10);
 		LastName_f.setBounds(588, 59, 172, 31);
 		contentPane.add(LastName_f);
 		
 		Username_f = new JTextField();
+		Username_f.setFont(new Font("Arial", Font.PLAIN, 13));
 		Username_f.setColumns(10);
 		Username_f.setBounds(367, 144, 219, 31);
 		contentPane.add(Username_f);
 		
 		Email_f = new JTextField();
+		Email_f.setFont(new Font("Arial", Font.PLAIN, 13));
 		Email_f.setColumns(10);
 		Email_f.setBounds(367, 225, 219, 31);
 		contentPane.add(Email_f);
@@ -136,6 +140,7 @@ public class Registration extends JFrame {
 		contentPane.add(lblSecurityQuestion);
 		
 		SeqA_f = new JTextField();
+		SeqA_f.setFont(new Font("Arial", Font.PLAIN, 13));
 		SeqA_f.setColumns(10);
 		SeqA_f.setBounds(367, 571, 219, 31);
 		contentPane.add(SeqA_f);
@@ -161,10 +166,12 @@ public class Registration extends JFrame {
 		contentPane.add(button);
 		
 		passwordField = new JPasswordField();
+		passwordField.setFont(new Font("Arial", Font.PLAIN, 13));
 		passwordField.setBounds(367, 308, 219, 31);
 		contentPane.add(passwordField);
 		
 		passwordField_1 = new JPasswordField();
+		passwordField_1.setFont(new Font("Arial", Font.PLAIN, 13));
 		passwordField_1.setBounds(367, 395, 219, 31);
 		contentPane.add(passwordField_1);
 	}
