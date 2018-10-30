@@ -6,10 +6,13 @@ public class Database {
 	public ArrayList<User> users=new ArrayList<User>();
 	String id[];
 	
+	//Adding the user in the users array list
 	void addUser(User newUser)
 	{
 		users.add(newUser);
 	}
+	
+	//Removing the user from the users array list
 	void removeUser(User user)
 	{
 		for( int i =0; i< users.size() ; i++)
@@ -21,6 +24,8 @@ public class Database {
 				   
 		   }
 	}
+	
+	//Searching for the user in the database
 	User search(String user)
 	{
 		User found = null;

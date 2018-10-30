@@ -5,18 +5,20 @@ public class Manager {
 	User current;
 	Database database;
 	
+	//Creating the user
 	void createUser()
 	{
 		database.addUser(new User());
 	}
 	
+	//Removing the user
 	void removeUser()
 	{
 		database.removeUser(current);
 		current = null;
 	}
 	
-	
+	//Accessing the user
 	void accessUser(User x)
 	{
 		if (x!= null) {
@@ -24,16 +26,19 @@ public class Manager {
 		}	
 	}
 	
+	//Adding Friend
 	void addFriend(User friend)
 	{
 		friend.addRequest(current);
 	}
 	
+	//Searching a user
 	User search(String user)
 	{
 		return database.search(user);
 	}
 	
+	//Removing the friend
 	User removeFriend(User friend)
 	{
 		current.removeFriend(friend);
@@ -48,6 +53,7 @@ public class Manager {
 	}
 	*/
 	
+	//Validating if the user is in the database
 	User validate(String username, String password)
 	{
 		User toReturn;
